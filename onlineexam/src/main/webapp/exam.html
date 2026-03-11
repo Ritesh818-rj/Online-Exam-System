@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+.sub {
+	height: 30px;
+	width: 115px;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
+.sub:hover {
+	background-color: #c6fdff;
+	cursor: pointer;
+	border: 1px solid black;
+}
+
+h4 {
+	background-color: #c6fdff;
+	display: inline-block;
+}
+
+hr {
+	height: 1px;
+	background-color: black;
+	margin: 60px 0px;
+}
+
+.time {
+	height: 30px;
+	width: 40px;
+	padding-top: 10px;
+}
+</style>
+</head>
+<body>
+	<div class="time">
+		<b class="min"> 4</b>:<b class="second">60</b> <br>
+	</div>
+	<b>Total Questions: 10</b>
+	<br>
+	<b>Total Marks : 10 </b>
+	<br>
+	<br>
+	<b>Note:-</b>
+	<br>
+	<i><b>i. </b>Candidates are advised to submit the exam before the
+		allotted time ends. If the time limit expires, the exam will be
+		submitted automatically by the system.</i>
+	<br>
+	<i><b>ii. </b>Each question carries 1 mark. The minimum passing
+		marks required are 4.</i>
+	<br>
+	<i><b>iii. </b>Once the exam is submitted, it cannot be attempted
+		again under any circumstances.</i>
+	<br>
+	<i><b>iv. </b>Please read all questions carefully before selecting
+		your answer.</i>
+	<br>
+	<i><b>v. </b>Ensure a stable internet connection while attempting
+		the exam to avoid interruptions</i>
+	<hr>
+	<form action="exam" method="post" class="form">
+		<h4>Q 1. Which HTML tag is used to create a hyperlink?</h4>
+		<br> <input type="radio" name="first" value="a1"> a.
+		&lt;link&gt;<br> <input type="radio" name="first" value="b1">
+		b. &lt;a&gt;<br> <input type="radio" name="first" value="c1">
+		c. &lt;href&gt;<br> <input type="radio" name="first" value="d1">
+		d. &lt;hyper&gt;<br>
+		<h4>Q 2. What does SQL stand for?</h4>
+		<br> <input type="radio" name="second" value="a2">a.
+		Structured Query Language<br> <input type="radio" name="second"
+			value="b2">b.Simple Question Language<br> <input
+			type="radio" name="second" value="c2">c. Standard Query List<br>
+		<input type="radio" name="second" value="d2">d. Structured
+		Question<br> List<br>
+		<h4>Q 3. Which of the following is a loop in Java?</h4>
+		<br> <input type="radio" name="third" value="a3">a.
+		if-else<br> <input type="radio" name="third" value="b3">b.
+		switch<br> <input type="radio" name="third" value="c3">c.
+		for<br> <input type="radio" name="third" value="d3">d.
+		break<br>
+		<h4>Q 4. java is a object orinted language</h4>
+		<br> <input type="radio" name="four" value="a4">a. True<br>
+		<input type="radio" name="four" value="b4">d. False<br>
+		<h4>Q 5. Which of the following is NOT a data type in C?</h4>
+		<br> <input type="radio" name="five" value="a5">a. int<br>
+		<input type="radio" name="five" value="b5">b. float<br> <input
+			type="radio" name="five" value="c5">c. string<br> <input
+			type="radio" name="five" value="d5">d. char<br>
+		<h4>Q 6. In database, which command is used to remove all records
+			from a table?</h4>
+		<br> <input type="radio" name="six" value="a6">a. DELETE<br>
+		<input type="radio" name="six" value="b6">b. DROP<br> <input
+			type="radio" name="six" value="c6">c. REMOVE<br> <input
+			type="radio" name="six" value="d6">d. ERASE<br>
+		<h4>Q 7. Which servlet method is used to handle GET requests?</h4>
+		<br> <input type="radio" name="seven" value="a7">a.
+		doGet()<br> <input type="radio" name="seven" value="b7">b.
+		doPost()<br> <input type="radio" name="seven" value="c7">c.
+		service()<br> <input type="radio" name="seven" value="d7">d.
+		init()<br>
+		<h4>Q 8. Which CSS property is used to change the text color of
+			an element?</h4>
+		<br> <input type="radio" name="eight" value="a8">a.
+		font-style<br> <input type="radio" name="eight" value="b8">b.
+		color<br> <input type="radio" name="eight" value="c8">c.
+		text-color<br> <input type="radio" name="eight" value="d8">d.
+		font-color<br>
+		<h4>Q 9. In JavaScript, which symbol is used for strict equality
+			comparison?</h4>
+		<br> <input type="radio" name="nine" value="a9">a. =<br>
+		<input type="radio" name="nine" value="b9">b. ==<br> <input
+			type="radio" name="nine" value="c9">c. ===<br> <input
+			type="radio" name="nine" value="d9">d. !=<br>
+		<h4>Q 10. Which of the following is a valid way to connect Java
+			with MySQL?</h4>
+		<br> <input type="radio" name="ten" value="a10">a. JDBC<br>
+		<input type="radio" name="ten" value="b10">b. HTML<br> <input
+			type="radio" name="ten" value="c10">c. CSS<br> <input
+			type="radio" name="ten" value="d10">d. javaFX <br> <br>
+		<br> <br> <input type="submit" value="submit" class="sub"><br>
+		<br> <br>
+	</form>
+	<script>
+	 var sec = 60;
+	 var min1 = 4;
+	 var  second =  document.querySelector(".second");
+	 var minute = document.querySelector(".min");
+	 
+	 setInterval(()=>{
+		 minute.innerText = min1;
+	      second.innerText = sec;
+	      --sec;
+			 if(min1 == 0 && sec == 0){
+				 document.querySelector(".form").submit();
+              }
+			 else if(sec == 0){
+			       sec = 60;
+		              --min1;
+           			  }
+			 
+         console.log(min1);
+	 },1000); 
+	 
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
