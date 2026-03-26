@@ -22,7 +22,7 @@ public class result extends HttpServlet {
 		try {
 
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection c = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/onlineexam", "root", "9359");
+			Connection c = DriverManager.getConnection("mysql://root:BLxszxszNtRQoshBrKkeXbZqkRAWjVbW@crossover.proxy.rlwy.net:44741/railway", "root", "BLxszxszNtRQoshBrKkeXbZqkRAWjVbW");
 			Statement s = c.createStatement();
 			String que = String.format("Select * from result Where email = '%s'", email);
 			ResultSet rs = s.executeQuery(que);
