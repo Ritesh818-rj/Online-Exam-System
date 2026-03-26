@@ -26,7 +26,7 @@ public class MyloginClass extends HttpServlet {
 			System.out.print(e);
 		}
 		try {
-			Connection c = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/onlineexam", "root", "9359");
+			Connection c = DriverManager.getConnection("mysql://root:BLxszxszNtRQoshBrKkeXbZqkRAWjVbW@crossover.proxy.rlwy.net:44741/railway", "root", "BLxszxszNtRQoshBrKkeXbZqkRAWjVbW");
 			Statement s = c.createStatement();
 			String myemail = req.getParameter("email");
 			String mypass = req.getParameter("pass");
